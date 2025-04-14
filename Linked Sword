@@ -47,14 +47,14 @@ task.spawn(function()
 	}
 
 	local Animations = {
-		R15Slash = 522635514,
-		R15Lunge = 522638767
+		Slash = 522635514,
+		Lunge = 522638767
 	}
 
 	local Damage = DamageValues.BaseDamage
 
 	local Grips = {
-		Up = CFrame.new(0, 0, -1.70000005, 0, 0, 1, 1, 0, 0, 0, 1, 0),
+		Up = CFrame.new(0, 0, -1.50000005, 0, 0, 1, 1, 0, 0, 0, 1, 0),
 		Out = CFrame.new(0, 0, -1.70000005, 0, 1, 0, 1, -0, 0, 0, 0, -1)
 	}
 
