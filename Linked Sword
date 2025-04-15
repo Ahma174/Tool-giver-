@@ -47,8 +47,8 @@ task.spawn(function()
 	}
 
 	local Animations = {
-		Slash = 522635514,
-		Lunge = 522638767
+		R15Slash = 522635514,
+		R15Lunge = 522638767
 	}
 
 	local Damage = DamageValues.BaseDamage
@@ -133,7 +133,7 @@ task.spawn(function()
 				Anim.Value = "Slash"
 				Anim.Parent = Tool
 			elseif Humanoid.RigType == Enum.HumanoidRigType.R15 then
-				local Anim = Tool:FindFirstChild("Slash")
+				local Anim = Tool:FindFirstChild("R15Slash")
 				if Anim then
 					local Track = Humanoid:LoadAnimation(Anim)
 					Track:Play(0)
@@ -154,7 +154,7 @@ task.spawn(function()
 				Anim.Value = "Lunge"
 				Anim.Parent = Tool
 			elseif Humanoid.RigType == Enum.HumanoidRigType.R15 then
-				local Anim = Tool:FindFirstChild("Lunge")
+				local Anim = Tool:FindFirstChild("R15Lunge")
 				if Anim then
 					local Track = Humanoid:LoadAnimation(Anim)
 					Track:Play(0)
@@ -187,13 +187,13 @@ task.spawn(function()
 		LastAttack = Tick
 		Damage = DamageValues.BaseDamage
 		local SlashAnim = (Tool:FindFirstChild("R15Slash") or Create("Animation"){
-			Name = "Slash",
+			Name = "R15Slash",
 			AnimationId = BaseUrl .. Animations.R15Slash,
 			Parent = Tool
 		})
 
 		local LungeAnim = (Tool:FindFirstChild("R15Lunge") or Create("Animation"){
-			Name = "Lunge",
+			Name = "R15Lunge",
 			AnimationId = BaseUrl .. Animations.R15Lunge,
 			Parent = Tool
 		})
