@@ -5,7 +5,6 @@ local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
 
 local rocketLauncher = game:GetObjects("rbxassetid://13602301356")[1]
-rocketLauncher.TextureId = "rbxasset://Textures/Rocket.png"
 local BoomSound = rocketLauncher:WaitForChild("Boom")
 local SwooshSound = rocketLauncher:WaitForChild("Swoosh")
 
